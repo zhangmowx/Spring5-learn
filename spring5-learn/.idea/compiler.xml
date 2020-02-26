@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-01-IOC" />
+        <module name="spring-02-DI" />
+        <module name="spring-03-aop" />
+        <module name="spring-04-dao" />
+        <module name="spring-05-tx" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

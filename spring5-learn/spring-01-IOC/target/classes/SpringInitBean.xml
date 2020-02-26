@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造方法实例化bean-->
+    <!--<bean id="person" class="bean.Person" />-->
+
+    <!--静态工厂方法实例化bean-->
+    <!--class="静态工厂类" factory-method="创建对象的方法名" -->
+    <!--<bean id="dog" class="bean.DogFactory" factory-method="createInstance"/>-->
+
+    <!--实例工厂方法实例化bean-->
+    <!--
+    先创建工厂bean对象，在创建真实bean对象
+    factory-bean="实例工厂对象bean的ID"
+    factory-method="实例工厂对象创建真实bean对象的方法名"
+    -->
+    <!--<bean id="catFactory" class="bean.CatFactory"/>-->
+    <!--<bean id="cat" factory-bean="catFactory" factory-method="createInstance"/>-->
+
+    <!--实现FactoryBean接口实例化-->
+    <!--<bean id="country" class="bean.CountryFactory"/>-->
+
+    <bean id="user" class="lifecycle.User" init-method="UserinitMethod" destroy-method="UserDestroyMethod">
+        <property name="id" value="1"/>
+        <property name="name" value="zhang"/>
+    </bean>
+    <bean id="myBeanFactoryPostProcessor" class="lifecycle.MyBeanFactoryPostProcessor"/>
+    <bean id="myBeanPostProcesser" class="lifecycle.MyBeanPostProcesser"/>
+    <bean id="myInstantiationAwareBeanPostProcessorAdapter" class="lifecycle.MyInstantiationAwareBeanPostProcessorAdapter"/>
+    <bean id="myInstantiationAwareBeanPostProcessor" class="lifecycle.MyInstantiationAwareBeanPostProcessor"/>
+
+</beans>
