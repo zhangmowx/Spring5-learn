@@ -11,6 +11,7 @@
         <module name="spring-03-aop" />
         <module name="spring-04-dao" />
         <module name="spring-05-tx" />
+        <module name="spring-06-annotation" />
       </profile>
     </annotationProcessing>
   </component>

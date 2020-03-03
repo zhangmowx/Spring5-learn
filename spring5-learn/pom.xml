@@ -14,6 +14,7 @@
         <module>spring-03-aop</module>
         <module>spring-04-dao</module>
         <module>spring-05-tx</module>
+        <module>spring-06-annotation</module>
     </modules>
 
     <!--声明jar包版本-->
